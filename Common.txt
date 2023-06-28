@@ -1,0 +1,24 @@
+
+
+
+       db.transaction(txn => {
+      txn.executeSql(`delete  from User`, []);
+    });
+    db.transaction(txn => {
+      txn.executeSql(`delete  from Employee`, []);
+    });
+    db.transaction(txn => {
+      txn.executeSql(`delete  from DeviceSynchTable`, []);
+    });
+    db.transaction(txn => {
+      txn.executeSql(`delete  from LkpTimesheetStatus`, []);
+    });
+    db.transaction(txn => {
+      txn.executeSql(`delete  from LkpCompany`, []);
+    });
+    db.transaction(txn => {
+      txn.executeSql(`delete  from LkpJob`, []);
+    });
+    db.transaction(txn => {
+      txn.executeSql(`delete  from LkpPhaseCode`, []);
+    });
